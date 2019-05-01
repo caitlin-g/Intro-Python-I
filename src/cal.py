@@ -22,3 +22,14 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+x = int(input("Enter Month(MM), Year(YYYY): ").split(','))
+
+
+year_today = datetime.now().year
+month_today = datetime.now().month
+
+    if len(sys.argv) == 1:
+        print(calendar.month(year_today, month_today))
+
+
